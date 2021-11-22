@@ -1,2 +1,2 @@
 # Eve-ng-Lab-Repo
-A collection of pre-build Labs for Eve-ng
+A collection of pre-built Labs for Eve-ng
