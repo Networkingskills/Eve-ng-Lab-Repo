@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="Python and Network automation" version="1" scripttimeout="300" countdown="0" lock="0" sat="-1">
+  <topology>
+    <nodes>
+      <node id="1" name="Switch" type="qemu" template="viosl2" image="viosl2-adventerprisek9-m.SSA.high_iron_20180619" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="8" uuid="df345eae-45bb-4386-9be2-015f58b9716b" firstmac="50:00:00:01:00:00" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" sat="0" icon="Switch L3.png" config="0" left="438" top="141">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="1" labelpos="0.5" curviness="10" beziercurviness="150" midpoint="0.5" srcpos="0.15" dstpos="0.85"/>
+        <interface id="1" name="Gi0/1" type="ethernet" network_id="2" labelpos="0.5" curviness="10" beziercurviness="150" midpoint="0.5" srcpos="0.15" dstpos="0.85"/>
+      </node>
+      <node id="2" name="vIOS2" type="qemu" template="vios" image="vios-adventerprisek9-m.SPA.156-1.T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="68f4be54-257e-40d6-9d6e-724d70d2be45" firstmac="50:00:00:02:00:00" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" sat="0" icon="Router.png" config="0" left="624" top="78">
+        <interface id="0" name="Gi0/0" type="ethernet" network_id="2" labelpos="0.5" curviness="10" beziercurviness="150" midpoint="0.5" srcpos="0.15" dstpos="0.85"/>
+      </node>
+      <node id="3" name="vIOS3" type="qemu" template="vios" image="vios-adventerprisek9-m.SPA.156-1.T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="6b1ff3a7-92e4-49dd-a61a-296c8eea89f5" firstmac="50:00:00:03:00:00" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" sat="0" icon="Router.png" config="0" left="750" top="99"/>
+      <node id="4" name="vIOS4" type="qemu" template="vios" image="vios-adventerprisek9-m.SPA.156-1.T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="36352ca2-589a-4b28-a6b8-4b2994ba824a" firstmac="50:00:00:04:00:00" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" sat="0" icon="Router.png" config="0" left="600" top="309"/>
+      <node id="5" name="vIOS5" type="qemu" template="vios" image="vios-adventerprisek9-m.SPA.156-1.T" console="telnet" cpu="1" cpulimit="0" ram="1024" ethernet="4" uuid="f5b5b2c5-1327-4efa-adac-bbda105195cb" firstmac="50:00:00:05:00:00" qemu_options="-machine type=pc,accel=kvm -serial mon:stdio -nographic -no-user-config -nodefaults -rtc base=utc -cpu host" qemu_version="2.12.0" qemu_arch="x86_64" delay="0" sat="0" icon="Router.png" config="0" left="687" top="309"/>
+    </nodes>
+    <networks>
+      <network id="1" type="pnet0" name="Net" left="171" top="153" style="Solid" linkstyle="Straight" color="" label="" visibility="1" icon="cloud.png"/>
+      <network id="2" type="bridge" name="Net-Switchiface_1" left="495" top="187" style="Solid" linkstyle="Straight" color="" label="" visibility="0" icon="lan.png"/>
+    </networks>
+  </topology>
+  <objects>
+    <textobjects>
+      <textobject id="1" name="txt 1" type="text">
+        <data>PGRpdiBpZD0iY3VzdG9tVGV4dDEiIGNsYXNzPSJjdXN0b21TaGFwZSBjdXN0b21UZXh0IGNvbnRleHQtbWVudSBqdGstbWFuYWdlZCBqdGstZHJhZ2dhYmxlIGVkaXRhYmxlIGNrZV9mb2N1cyB1aS1zZWxlY3RlZSBkcmFnc3RvcHBlZCIgZGF0YS1wYXRoPSIxIiBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyBsZWZ0OiAxMTMxcHg7IHRvcDogNDVweDsgei1pbmRleDogMTAwMTsgY3Vyc29yOiBtb3ZlOyIgY29udGVudGVkaXRhYmxlPSJ0cnVlIj48cD48c3Ryb25nPkxhYiBPT0IgSVAgUmFuZ2U8L3N0cm9uZz48L3A+Cgo8cD4xMC4xMC44LjAgfiAxMC4xMC44LjI1NTwvcD4KCjxwPkRXOiAxMC4xMC4wLjEgLyZuYnNwOyBtYXNrIDE2PC9wPgo8L2Rpdj4=</data>
+      </textobject>
+    </textobjects>
+  </objects>
+</lab>
